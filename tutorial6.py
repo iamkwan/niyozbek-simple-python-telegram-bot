@@ -28,7 +28,8 @@ def webhook():
             newFile = bot.get_file(file_id)
             newFile.download('test.jpg')
             # Reply with the same message
-            bot.sendMessage(chat_id=chat_id, text=f"test {bot.get_file(file_id)} {first_name}")
+            #bot.sendMessage(chat_id=chat_id, text=f"test {bot.get_file(file_id)} {first_name}")
+            bot.send_photo(chat_id=chat_id, photo='https://upload.cc/i1/2021/02/09/Chdj3z.jpg')
             return 'ok'
         except Exception:
             bot.sendMessage(chat_id=chat_id, text=f"{text} {first_name}")
