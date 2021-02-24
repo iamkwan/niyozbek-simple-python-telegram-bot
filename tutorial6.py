@@ -23,7 +23,6 @@ def webhook():
         chat_id     = update.effective_chat.id
         text        = update.message.text
         first_name  = update.effective_chat.first_name
-        photo = update.photo
         # Reply with the same message
         bot.sendMessage(chat_id=chat_id, text=f"test {update} {first_name}")
         return 'ok'
