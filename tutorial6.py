@@ -31,7 +31,7 @@ def webhook():
             bot.sendMessage(chat_id=chat_id, text=f"test {bot.get_file(file_id)} {first_name}")
             return 'ok'
         except:
-            bot.sendMessage(chat_id=chat_id, text=f"test {bot.get_file(file_id)} {first_name}")
+            bot.sendMessage(chat_id=chat_id, text=f"{text} {first_name}")
             return 'ok'
     return 'error'
 
