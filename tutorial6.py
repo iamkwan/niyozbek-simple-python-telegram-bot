@@ -25,8 +25,8 @@ def webhook():
         first_name  = update.effective_chat.first_name
         try:
             file_id = update.message.photo[-1].file_id
-            newFile = bot.get_file(file_id)
-            newFile.download('test.jpg')
+            #newFile = bot.get_file(file_id)
+            #newFile.download('test.jpg')
             # Reply with the same message
             bot.sendMessage(chat_id=chat_id, text=f"test {bot.get_file(file_id)} {first_name}")
             return 'ok'
