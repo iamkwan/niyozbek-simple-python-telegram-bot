@@ -24,7 +24,7 @@ def webhook():
         text        = update.message.text
         first_name  = update.effective_chat.first_name
         # Reply with the same message
-        bot.sendMessage(chat_id=chat_id, text=f"test {update.message.photo} {first_name}")
+        bot.sendMessage(chat_id=chat_id, text=f"test {update.message.photo[2].file_id} {first_name}")
         return 'ok'
     return 'error'
 
